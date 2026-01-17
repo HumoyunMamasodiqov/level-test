@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Server xatosi | IT House</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .error-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ef4444, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+        
+        .error-message {
+            color: #64748b;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #1e40af, #3b82f6);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+        
+        .support-info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 10px;
+            text-align: left;
+        }
+        
+        @media (max-width: 768px) {
+            .error-container {
+                padding: 30px;
+            }
+            
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">500</div>
+        <h1 class="error-title">Server xatosi</h1>
+        <p class="error-message">
+            Kechirasiz, serverda ichki xatolik yuz berdi. Texnik xizmat jamoasi bu haqida xabardor qilinadi.
+        </p>
+        <a href="/" class="back-button">
+            <i class="fas fa-home"></i> Bosh sahifaga qaytish
+        </a>
+        
+        <div class="support-info">
+            <h3><i class="fas fa-life-ring"></i> Yordam kerakmi?</h3>
+            <p style="margin-top: 10px;">
+                Agar muammo davom etsa, iltimos quyidagi ma'lumotlarni yozib oling va texnik yordamga murojaat qiling:
+            </p>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li>Vaqt: <span id="current-time"></span></li>
+                <li>Sahifa: <span id="current-url"></span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('current-time').textContent = new Date().toLocaleString('uz-UZ');
+        document.getElementById('current-url').textContent = window.location.href;
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>

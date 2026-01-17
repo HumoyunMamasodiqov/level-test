@@ -1,0 +1,1195 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 31
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4592
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4176
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/base.css HTTP/1.1" 200 21207
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18557
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7574
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/test_app/level/add/ HTTP/1.1" 200 11537
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8953
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11952
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"POST /admin/test_app/level/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 12508
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/test_app/question/ HTTP/1.1" 200 9903
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/question/add/ HTTP/1.1" 200 21786
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+"POST /admin/test_app/question/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/question/ HTTP/1.1" 200 13093
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET /api/questions/1/ HTTP/1.1" 200 297
+"POST /api/submit-test/ HTTP/1.1" 200 121
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4592
+"GET /api/questions/1/ HTTP/1.1" 200 297
+"POST /api/submit-test/ HTTP/1.1" 200 121
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 11991
+Not Found: /css/style.css
+Not Found: /js/database.js
+Not Found: /js/telegram.js
+"GET /css/style.css HTTP/1.1" 404 4598
+Not Found: /js/app.js
+"GET /js/database.js HTTP/1.1" 404 4601
+"GET /js/telegram.js HTTP/1.1" 404 4601
+"GET /js/app.js HTTP/1.1" 404 4586
+"GET / HTTP/1.1" 200 36233
+"GET / HTTP/1.1" 200 49316
+Not Found: /sw.js
+"GET /sw.js HTTP/1.1" 404 4574
+"GET / HTTP/1.1" 200 49316
+Not Found: /sw.js
+"GET /sw.js HTTP/1.1" 404 4574
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET /api/questions/1/ HTTP/1.1" 200 297
+"POST /api/submit-test/ HTTP/1.1" 200 121
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+- Broken pipe from ('127.0.0.1', 49670)
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 50356
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET /api/questions/1/ HTTP/1.1" 200 297
+"POST /api/submit-test/ HTTP/1.1" 200 121
+"GET /api/levels/ HTTP/1.1" 200 114
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 43371
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4592
+"GET / HTTP/1.1" 200 43371
+"GET / HTTP/1.1" 200 43371
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 114
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /admin/ HTTP/1.1" 200 8193
+"GET /admin/test_app/level/ HTTP/1.1" 200 12308
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/level/add/ HTTP/1.1" 200 11537
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/level/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 13290
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/level/add/ HTTP/1.1" 200 11537
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/level/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 14070
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/level/add/ HTTP/1.1" 200 11537
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/level/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 14855
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET / HTTP/1.1" 200 35275
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 385
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 35275
+"GET /api/levels/ HTTP/1.1" 200 385
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4592
+"GET / HTTP/1.1" 200 35779
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35779
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35779
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35779
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35817
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35817
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35374
+"GET / HTTP/1.1" 200 35374
+- Broken pipe from ('127.0.0.1', 58339)
+"GET /static/img/image.png HTTP/1.1" 200 113019
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35394
+"GET /static/img/image.png HTTP/1.1" 304 0
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35432
+"GET /static/img/image.png HTTP/1.1" 304 0
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35432
+"GET /api/levels/ HTTP/1.1" 200 385
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35851
+"GET /static/img/image.png HTTP/1.1" 304 0
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35851
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35432
+"GET /static/img/image.png HTTP/1.1" 304 0
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35432
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35333
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35333
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35333
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35432
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35432
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35358
+"GET /static/img/image.png HTTP/1.1" 304 0
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET / HTTP/1.1" 200 35358
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /api/levels/ HTTP/1.1" 200 385
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35358
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35358
+- Broken pipe from ('127.0.0.1', 60549)
+"GET /api/levels/ HTTP/1.1" 200 385
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /admin/ HTTP/1.1" 200 9041
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 14658
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/test_app/level/add/ HTTP/1.1" 200 11537
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/level/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 15632
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 35358
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35358
+- Broken pipe from ('127.0.0.1', 60720)
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35351
+"GET /static/img/image.png HTTP/1.1" 304 0
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35351
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+- Broken pipe from ('127.0.0.1', 57875)
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35402
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35402
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35432
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35432
+"GET /static/img/image.png HTTP/1.1" 304 0
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35225
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35225
+"GET /api/levels/ HTTP/1.1" 200 469
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35225
+"GET /static/img/image.png HTTP/1.1" 200 113019
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35225
+"GET /api/levels/ HTTP/1.1" 200 469
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35316
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35316
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35360
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35360
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35360
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35372
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /static/img/image.png HTTP/1.1" 200 113019
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35372
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35372
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35429
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35489
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35489
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /static/img/image.png HTTP/1.1" 200 113019
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35396
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35243
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35243
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35243
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35311
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35311
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /static/img/image.png HTTP/1.1" 200 113019
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35311
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35254
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35254
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35298
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35298
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /static/img/image.png HTTP/1.1" 200 113019
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35351
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35406
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35406
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35410
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35469
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35478
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35508
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35508
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35512
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35530
+"GET /static/img/image.png HTTP/1.1" 200 113019
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET / HTTP/1.1" 200 35530
+- Broken pipe from ('127.0.0.1', 60021)
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4703
+"GET /static/img/image.png HTTP/1.1" 200 113019
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET / HTTP/1.1" 200 35543
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET /api/questions/3/ HTTP/1.1" 200 34
+"GET /api/levels/ HTTP/1.1" 200 469
+"GET /api/questions/1/ HTTP/1.1" 200 297
+"POST /api/submit-test/ HTTP/1.1" 200 121
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 35543
+"GET /static/img/image.png HTTP/1.1" 304 0
+"GET /api/levels/ HTTP/1.1" 200 469
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4592
+"GET /api/questions/1/ HTTP/1.1" 200 297
+"POST /api/submit-test/ HTTP/1.1" 200 123
+"GET /api/levels/ HTTP/1.1" 200 469
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 35543
+"GET /static/img/image.png HTTP/1.1" 304 0
+"GET /api/levels/ HTTP/1.1" 200 469
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4592
+"GET /admin/ HTTP/1.1" 200 9322
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 15437
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/test_app/level/add/ HTTP/1.1" 200 11537
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/level/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 16425
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 35543
+"GET /api/levels/ HTTP/1.1" 200 580
+"GET /api/questions/6/ HTTP/1.1" 200 34
+"GET /admin/test_app/question/ HTTP/1.1" 200 13423
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/question/add/ HTTP/1.1" 200 21968
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/test_app/question/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/question/ HTTP/1.1" 200 14245
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET / HTTP/1.1" 200 35543
+"GET /api/levels/ HTTP/1.1" 200 580
+"GET /api/questions/6/ HTTP/1.1" 200 298
+"POST /api/submit-test/ HTTP/1.1" 200 123
+Internal Server Error: /admin/test_app/testresult/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+KeyError: 'score_percent'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\utils.py", line 272, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\utils.py", line 303, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: TestResult has no field named 'score_percent'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 111, in render
+    self.content = self.rendered_content
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 89, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\utils.py", line 281, in lookup_field
+    value = attr(obj)
+  File "C:\Users\hp\Desktop\New folder (2)\test_project\test_app\admin.py", line 234, in score_percent
+    return format_html(
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\html.py", line 105, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+ValueError: Unknown format code 'f' for object of type 'SafeString'
+Internal Server Error: /admin/test_app/testresult/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+KeyError: 'score_percent'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\utils.py", line 272, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\utils.py", line 303, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: TestResult has no field named 'score_percent'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 111, in render
+    self.content = self.rendered_content
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 89, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\utils.py", line 281, in lookup_field
+    value = attr(obj)
+  File "C:\Users\hp\Desktop\New folder (2)\test_project\test_app\admin.py", line 234, in score_percent
+    return format_html(
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\html.py", line 105, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+ValueError: Unknown format code 'f' for object of type 'SafeString'
+"GET /admin/test_app/testresult/ HTTP/1.1" 500 395885
+- Broken pipe from ('127.0.0.1', 57421)
+"GET /api/levels/ HTTP/1.1" 200 580
+"GET /admin/test_app/question/ HTTP/1.1" 200 14018
+"GET /admin/test_app/question/ HTTP/1.1" 200 14018
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/question/2/change/ HTTP/1.1" 200 23075
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/question/2/delete/ HTTP/1.1" 200 8719
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"GET /admin/test_app/question/2/change/ HTTP/1.1" 200 23075
+"GET / HTTP/1.1" 200 35543
+"GET /api/levels/ HTTP/1.1" 200 580
+"GET / HTTP/1.1" 200 35543
+"GET /api/levels/ HTTP/1.1" 200 580
+"GET /api/questions/6/ HTTP/1.1" 200 298
+"POST /api/submit-test/ HTTP/1.1" 200 121
+"GET / HTTP/1.1" 200 35543
+"GET /api/levels/ HTTP/1.1" 200 580
+"GET / HTTP/1.1" 200 35543
+"GET /api/levels/ HTTP/1.1" 200 580
+"GET /api/questions/4/ HTTP/1.1" 200 34
+"GET / HTTP/1.1" 200 35543
+"GET /static/img/image.png HTTP/1.1" 200 113019
+"GET /api/levels/ HTTP/1.1" 200 580
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4592
+"GET /api/questions/6/ HTTP/1.1" 200 298
+"POST /api/submit-test/ HTTP/1.1" 200 121
+"GET /api/levels/ HTTP/1.1" 200 580
+"GET /api/questions/5/ HTTP/1.1" 200 34
+"POST /api/submit-test/ HTTP/1.1" 200 119
+C:\Users\hp\Desktop\New folder (2)\test_project\test_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hp\Desktop\New folder (2)\test_project\test_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hp\Desktop\New folder (2)\test_project\test_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hp\Desktop\New folder (2)\test_project\test_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hp\Desktop\New folder (2)\test_project\test_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hp\Desktop\New folder (2)\test_project\test_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hp\Desktop\New folder (2)\test_project\test_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hp\Desktop\New folder (2)\test_project\test_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hp\Desktop\New folder (2)\test_project\test_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hp\Desktop\New folder (2)\test_project\test_project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 19975
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 31
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4570
+"GET /admin/ HTTP/1.1" 200 10431
+"GET /admin/test_app/level/ HTTP/1.1" 200 9920
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/level/add/ HTTP/1.1" 200 13421
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/level/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 13006
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/level/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 12796
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET / HTTP/1.1" 200 19975
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 133
+"POST /api/start-session/ HTTP/1.1" 200 94
+"GET /api/questions/IT_20260115_731F381D/ HTTP/1.1" 200 76
+"GET /admin/test_app/question/ HTTP/1.1" 200 9509
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/question/add/ HTTP/1.1" 200 20304
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/question/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/question/ HTTP/1.1" 200 11558
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET / HTTP/1.1" 200 19975
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET / HTTP/1.1" 200 19975
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 133
+"POST /api/start-session/ HTTP/1.1" 200 94
+"GET /api/questions/IT_20260115_11DC6563/ HTTP/1.1" 200 402
+"POST /api/start-session/ HTTP/1.1" 200 94
+"GET /api/questions/IT_20260115_E46F62FE/ HTTP/1.1" 200 402
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 44956
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 133
+"POST /api/start-session/ HTTP/1.1" 200 94
+"GET /api/questions/IT_20260115_DA2E4CB6/ HTTP/1.1" 200 402
+"POST /api/submit-test/ HTTP/1.1" 200 160
+"POST /api/start-session/ HTTP/1.1" 200 94
+"GET /api/questions/IT_20260115_AD011C5D/ HTTP/1.1" 200 402
+"GET / HTTP/1.1" 200 44956
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET / HTTP/1.1" 200 55418
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET / HTTP/1.1" 200 44956
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET / HTTP/1.1" 200 55418
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET / HTTP/1.1" 200 55418
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET / HTTP/1.1" 200 55418
+"GET /api/levels/ HTTP/1.1" 200 133
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET / HTTP/1.1" 200 55418
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET / HTTP/1.1" 200 53701
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET / HTTP/1.1" 200 53701
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET / HTTP/1.1" 200 53701
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET / HTTP/1.1" 200 53701
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET / HTTP/1.1" 200 53701
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET / HTTP/1.1" 200 53081
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 133
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET / HTTP/1.1" 200 53081
+"GET /api/levels/ HTTP/1.1" 200 133
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET /admin/test_app/question/ HTTP/1.1" 200 11345
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/level/add/ HTTP/1.1" 200 13421
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/level/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 13829
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET / HTTP/1.1" 200 53081
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 236
+"GET / HTTP/1.1" 200 53081
+"GET /api/levels/ HTTP/1.1" 200 236
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /admin/test_app/question/add/ HTTP/1.1" 200 20350
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/level/ HTTP/1.1" 200 13622
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/level/add/ HTTP/1.1" 200 13421
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/level/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 14670
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET / HTTP/1.1" 200 53081
+"GET /api/levels/ HTTP/1.1" 200 345
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET / HTTP/1.1" 200 53081
+"GET /api/levels/ HTTP/1.1" 200 345
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET / HTTP/1.1" 200 52797
+"GET /api/levels/ HTTP/1.1" 200 345
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET / HTTP/1.1" 200 52797
+"GET /api/levels/ HTTP/1.1" 200 345
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET / HTTP/1.1" 200 52608
+"GET /api/levels/ HTTP/1.1" 200 345
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET / HTTP/1.1" 200 44956
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 345
+"GET / HTTP/1.1" 200 44956
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 345
+"POST /api/start-session/ HTTP/1.1" 200 94
+"GET /api/questions/IT_20260115_49E436EE/ HTTP/1.1" 200 402
+"GET / HTTP/1.1" 200 44956
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 345
+"GET /admin/test_app/level/ HTTP/1.1" 200 14454
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/level/add/ HTTP/1.1" 200 13421
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"POST /admin/test_app/level/add/ HTTP/1.1" 302 0
+"GET /admin/test_app/level/ HTTP/1.1" 200 15517
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET / HTTP/1.1" 200 44956
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 467
+"POST /api/start-session/ HTTP/1.1" 200 95
+"GET /api/questions/IT_20260115_C42CF2CA/ HTTP/1.1" 200 88
+C:\Users\hp\Desktop\New folder (2)\test_project\test_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\hp\Desktop\New folder (2)\test_project\test_app\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 44956
+"GET /api/levels/ HTTP/1.1" 200 467
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4570
+"POST /api/start-session/ HTTP/1.1" 200 94
+"GET /api/questions/IT_20260116_C3316A37/ HTTP/1.1" 200 402
+"POST /api/submit-test/ HTTP/1.1" 200 161
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 44956
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 467
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4570
+"GET / HTTP/1.1" 200 44956
+"GET /static/img/logo.png HTTP/1.1" 404 1896
+"GET /api/levels/ HTTP/1.1" 200 467
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4570
+"POST /api/start-session/ HTTP/1.1" 200 94
+"GET /api/questions/IT_20260117_B0CB663D/ HTTP/1.1" 200 402
+"POST /api/submit-test/ HTTP/1.1" 200 162
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4179
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4681
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/base.css HTTP/1.1" 200 21207
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18557
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11060
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/test_app/question/ HTTP/1.1" 200 11829
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/test_app/question/1/change/ HTTP/1.1" 200 24154
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8953
+"GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11952
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+"POST /admin/test_app/question/1/change/ HTTP/1.1" 302 0
+"GET /admin/test_app/question/ HTTP/1.1" 200 12040
+"GET /admin/jsi18n/ HTTP/1.1" 200 6254
+"GET /admin/test_app/question/1/change/ HTTP/1.1" 200 24136
+"GET /admin/test_app/question/ HTTP/1.1" 200 11829
+"GET /admin/ HTTP/1.1" 200 11080
+"GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11080

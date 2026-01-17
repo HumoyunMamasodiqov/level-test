@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="uz">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT House - Ingliz Tili Test Tizimi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #3b82f6;
+            --accent-color: #f59e0b;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --light-bg: #f8fafc;
+            --dark-text: #1e293b;
+            --border-color: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 0.8s ease;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+            padding: 5px;
+            background: white;
+        }
+        
+        .header h1 {
+            color: var(--primary-color);
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .header p {
+            color: var(--dark-text);
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-badge {
+            background: var(--success-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+        }
+        
+        .stat-badge.primary {
+            background: var(--primary-color);
+        }
+        
+        .stat-badge.accent {
+            background: var(--accent-color);
+        }
+        
+        /* Darajalar grid */
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .level-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.6s ease backwards;
+        }
+        
+        .level-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-color);
+        }
+        
+        .level-card.selected {
+            border-color: var(--primary-color);
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(59, 130, 246, 0.1));
+        }
+        
+        .level-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .level-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .level-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .level-description {
+            color: var(--dark-text);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .level-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .level-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        
+        .select-btn {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .select-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+        }
+        
+        .select-btn.selected {
+            background: linear-gradient(45deg, var(--success-color), #34d399);
+        }
+        
+        /* Registration form */
+        .registration-form {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 500px;
+            animation: fadeIn 0.6s ease;
+            display: none; /* Boshlashda yashirin */
+        }
+        
+        .registration-form.active {
+            display: block;
+        }
+        
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .form-header h2 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .selected-level-info {
+            background: var(--light-bg);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .selected-level-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--dark-text);
+            font-weight: 600;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        .form-note {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-top: 5px;
+            display: block;
+        }
+        
+        .start-test-btn {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .start-test-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+        
+        .back-btn {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        
+        .back-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        /* Test sahifasi */
+        .test-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            animation: fadeIn 0.5s ease;
+            display: none;
+        }
+        
+        .test-container.active {
+            display: block;
+        }
+        
+        .test-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #e2e8f0;
+            border-radius: 5px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .question-container {
+            margin-bottom: 40px;
+        }
+        
+        .question-text {
+            font-size: 1.5rem;
+            color: var(--dark-text);
+            margin-bottom: 30px;
+            line-height: 1.6;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 15px;
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .answers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .answer-option {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 15px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .answer-option:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .answer-option.selected {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+        }
+        
+        .answer-letter {
+            width: 40px;
+            height: 40px;
+            background: var(--light-bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .answer-option.selected .answer-letter {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            gap: 20px;
+        }
+        
+        .nav-btn {
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: none;
+        }
+        
+        .prev-btn {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .prev-btn:hover {
+            background: var(--light-bg);
+        }
+        
+        .next-btn, .submit-btn {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+        
+        .next-btn:hover, .submit-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+        }
+        
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 50px;
+            display: none;
+        }
+        
+        .loading.active {
+            display: block;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid var(--border-color);
+            border-top-color: var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        /* Natijalar sahifasi */
+        .result-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            animation: fadeIn 0.5s ease;
+            display: none;
+        }
+        
+        .result-container.active {
+            display: block;
+        }
+        
+        .result-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+        
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+            position: relative;
+        }
+        
+        .score-circle svg {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+        
+        .score-circle-bg {
+            fill: none;
+            stroke: #e2e8f0;
+            stroke-width: 10;
+        }
+        
+        .score-circle-fill {
+            fill: none;
+            stroke: var(--primary-color);
+            stroke-width: 10;
+            stroke-linecap: round;
+            stroke-dasharray: 565;
+            stroke-dashoffset: 565;
+            transition: stroke-dashoffset 1.5s ease;
+        }
+        
+        .score-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .result-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .result-card {
+            background: var(--light-bg);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .result-card i {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .telegram-notice {
+            background: #0088cc;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .telegram-notice.active {
+            display: flex;
+        }
+        
+        .telegram-error {
+            background: #ef4444;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .telegram-error.active {
+            display: flex;
+        }
+        
+        .restart-btn {
+            background: linear-gradient(45deg, var(--success-color), #34d399);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        
+        .restart-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+        }
+        
+        /* Animatsiyalar */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .level-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .test-container, .result-container {
+                padding: 20px;
+            }
+            
+            .question-text {
+                font-size: 1.2rem;
+            }
+            
+            .answers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .navigation-buttons {
+                flex-direction: column;
+            }
+            
+            .select-btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+            
+            .level-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 1. Bosh sahifa - Darajalar -->
+        <div id="levels-page" class="active">
+            <div class="header">
+                <div class="logo-container">
+                    <img src="{% static 'img/logo.png' %}" alt="IT House Logo" class="logo">
+                    <div style="text-align: center;">
+                        <h1>IT House</h1>
+                        <p style="color: var(--dark-text); margin-top: 5px;">Ingliz Tili Test Tizimi</p>
+                    </div>
+                </div>
+                <p>Ingliz tili bilimingizni sinash uchun quyidagi darajalardan birini tanlang:</p>
+                <div class="stats-container">
+                    <span class="stat-badge">
+                        <i class="fas fa-graduation-cap"></i> 6 ta daraja
+                    </span>
+                    <span class="stat-badge primary">
+                        <i class="fas fa-question-circle"></i> 20+ savol
+                    </span>
+                    <span class="stat-badge accent">
+                        <i class="fas fa-clock"></i> Turli vaqt limitlari
+                    </span>
+                </div>
+            </div>
+            
+            <div class="level-grid" id="levels-container">
+                <!-- Darajalar JavaScript orqali to'ldiriladi -->
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px; color: white;">
+                <p style="font-size: 1.1rem;">
+                    <i class="fas fa-info-circle"></i> Tanlangan daraja bo'yicha test boshlang. Har bir daraja uchun vaqt limiti va savollar soni har xil.
+                </p>
+            </div>
+        </div>
+        
+        <!-- 2. Ro'yxatdan o'tish formasi -->
+        <div id="registration-page" class="registration-form">
+            <div class="form-header">
+                <h2><i class="fas fa-user-plus"></i> Ismingizni kiriting</h2>
+                <p>Testni boshlash uchun quyidagi ma'lumotlarni to'ldiring</p>
+            </div>
+            
+            <div class="selected-level-info" id="selected-level-info">
+                <!-- Tanlangan daraja haqida ma'lumot -->
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Ismingiz *</label>
+                <input type="text" class="form-input" id="first-name" placeholder="Ismingizni kiriting" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Familyangiz *</label>
+                <input type="text" class="form-input" id="last-name" placeholder="Familyangizni kiriting" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Telefon raqamingiz (ixtiyoriy)</label>
+                <input type="text" class="form-input" id="phone-number" placeholder="998901234567">
+                <span class="form-note">Natijalarni Telegram orqali olish uchun (ixtiyoriy)</span>
+            </div>
+            
+            <button class="start-test-btn" onclick="startTest()">
+                <i class="fas fa-play-circle"></i> Testni Boshlash
+            </button>
+            
+            <button class="back-btn" onclick="goBackToLevels()">
+                <i class="fas fa-arrow-left"></i> Darajalarga qaytish
+            </button>
+            
+            <div style="margin-top: 30px; padding: 15px; background: var(--light-bg); border-radius: 10px;">
+                <p style="margin: 0; color: var(--dark-text); font-size: 0.9rem; text-align: center;">
+                    <i class="fas fa-shield-alt"></i> Ma'lumotlaringiz maxfiyligi kafolatlangan
+                </p>
+            </div>
+        </div>
+        
+        <!-- 3. Loading sahifasi -->
+        <div id="loading-page" class="loading">
+            <div class="spinner"></div>
+            <h3 style="color: white;">Savollar yuklanmoqda...</h3>
+            <p style="color: white;">Iltimos, kuting. Bu bir necha soniya vaqt olishi mumkin</p>
+        </div>
+        
+        <!-- 4. Test sahifasi -->
+        <div id="test-page" class="test-container">
+            <div class="test-header">
+                <div>
+                    <h2 id="current-level">Test</h2>
+                    <p id="question-counter">Savol 1/20</p>
+                </div>
+                <div style="text-align: right;">
+                    <div id="timer" style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">
+                        <i class="fas fa-clock"></i> <span id="time">15:00</span>
+                    </div>
+                    <button onclick="exitTest()" style="background: transparent; border: none; color: var(--danger-color); cursor: pointer; margin-top: 5px;">
+                        <i class="fas fa-sign-out-alt"></i> Chiqish
+                    </button>
+                </div>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-text" id="question-text">
+                    Savol matni yuklanmoqda...
+                </div>
+                
+                <div class="answers-grid" id="answers-container">
+                    <!-- Javoblar bu yerda ko'rsatiladi -->
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <button class="nav-btn prev-btn" onclick="prevQuestion()" id="prev-btn">
+                    <i class="fas fa-arrow-left"></i> Oldingi
+                </button>
+                <button class="nav-btn next-btn" onclick="nextQuestion()" id="next-btn">
+                    Keyingi <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="nav-btn submit-btn" onclick="submitTest()" id="submit-btn" style="display: none;">
+                    <i class="fas fa-paper-plane"></i> Testni yakunlash
+                </button>
+            </div>
+        </div>
+        
+        <!-- 5. Natijalar sahifasi -->
+        <div id="result-page" class="result-container">
+            <div class="result-icon" id="result-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            
+            <h2 style="color: var(--primary-color); margin-bottom: 10px;">Test Yakunlandi!</h2>
+            <p style="color: var(--dark-text); margin-bottom: 30px; font-size: 1.1rem;" id="result-message">
+                Siz testni muvaffaqiyatli yakunladingiz
+            </p>
+            
+            <div class="score-circle">
+                <svg>
+                    <circle class="score-circle-bg" cx="100" cy="100" r="90"></circle>
+                    <circle class="score-circle-fill" cx="100" cy="100" r="90"></circle>
+                </svg>
+                <div class="score-text" id="score-text">0%</div>
+            </div>
+            
+            <div class="result-details">
+                <div class="result-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3 id="result-level">Beginner</h3>
+                    <p>Daraja</p>
+                </div>
+                <div class="result-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3 id="correct-answers">0/20</h3>
+                    <p>To'g'ri javoblar</p>
+                </div>
+                <div class="result-card">
+                    <i class="fas fa-clock"></i>
+                    <h3 id="time-spent">0:00</h3>
+                    <p>Sarflangan vaqt</p>
+                </div>
+            </div>
+            
+            <div class="telegram-notice" id="telegram-notice">
+                <i class="fab fa-telegram"></i>
+                <span>Natijalar Telegram orqali yuborildi!</span>
+            </div>
+            
+            <div class="telegram-error" id="telegram-error">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>Telegramga yuborishda xatolik yuz berdi</span>
+            </div>
+            
+            <button class="restart-btn" onclick="restartTest()">
+                <i class="fas fa-redo"></i> Yangi Test Boshlash
+            </button>
+            
+            <div style="margin-top: 40px;">
+                <button onclick="viewAnswers()" style="background: transparent; border: 2px solid var(--primary-color); color: var(--primary-color); padding: 10px 20px; border-radius: 50px; cursor: pointer; margin-right: 10px;">
+                    <i class="fas fa-list-check"></i> Javoblarni ko'rish
+                </button>
+                <button onclick="shareResults()" style="background: var(--primary-color); color: white; border: none; padding: 10px 20px; border-radius: 50px; cursor: pointer;">
+                    <i class="fas fa-share"></i> Natijalarni ulashish
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global o'zgaruvchilar
+        let currentLevel = null;
+        let currentSessionId = null;
+        let questions = [];
+        let currentQuestionIndex = 0;
+        let userAnswers = {};
+        let timeLimit = 15;
+        let totalTime = 0;
+        let timerInterval = null;
+        let startTime = null;
+        
+        // Sahifalar
+        const levelsPage = document.getElementById('levels-page');
+        const registrationPage = document.getElementById('registration-page');
+        const loadingPage = document.getElementById('loading-page');
+        const testPage = document.getElementById('test-page');
+        const resultPage = document.getElementById('result-page');
+        
+        // Dastlabki yuklash
+        window.onload = async function() {
+            await loadLevels();
+        };
+        
+        // Darajalarni yuklash
+        async function loadLevels() {
+            try {
+                const response = await fetch('/api/levels/');
+                const data = await response.json();
+                
+                if (data.success) {
+                    const container = document.getElementById('levels-container');
+                    container.innerHTML = '';
+                    
+                    const icons = ['fas fa-seedling', 'fas fa-leaf', 'fas fa-tree', 'fas fa-mountain', 'fas fa-star', 'fas fa-crown'];
+                    
+                    data.levels.forEach((level, index) => {
+                        const card = document.createElement('div');
+                        card.className = 'level-card';
+                        card.style.animationDelay = `${index * 0.1}s`;
+                        card.innerHTML = `
+                            <div class="level-icon">
+                                <i class="${icons[index % icons.length]}"></i>
+                            </div>
+                            <h3 class="level-title">${level.name}</h3>
+                            <p class="level-description">${level.description || 'Ingliz tilini o\'rganish uchun mos daraja'}</p>
+                            <div class="level-stats">
+                                <div class="level-stat">
+                                    <span class="stat-value">${level.question_count}</span>
+                                    <span class="stat-label">Savollar</span>
+                                </div>
+                                <div class="level-stat">
+                                    <span class="stat-value">${level.time_limit}</span>
+                                    <span class="stat-label">Daqiqa</span>
+                                </div>
+                            </div>
+                            <button class="select-btn" onclick="selectLevel(${level.id}, '${level.name}', ${level.time_limit}, ${level.question_count})">
+                                <i class="fas fa-check"></i> Tanlash
+                            </button>
+                        `;
+                        container.appendChild(card);
+                    });
+                }
+            } catch (error) {
+                console.error('Darajalarni yuklashda xatolik:', error);
+                alert('Server bilan bog\'lanishda xatolik. Iltimos, qayta urinib ko\'ring.');
+            }
+        }
+        
+        // Daraja tanlash
+        function selectLevel(levelId, levelName, timeLimitMinutes, questionCount) {
+            currentLevel = {
+                id: levelId,
+                name: levelName,
+                timeLimit: timeLimitMinutes,
+                questionCount: questionCount
+            };
+            
+            // Tanlangan daraja haqida ma'lumot
+            document.getElementById('selected-level-info').innerHTML = `
+                <h3>${levelName}</h3>
+                <p>⏰ ${timeLimitMinutes} daqiqa | ❓ ${questionCount} ta savol</p>
+            `;
+            
+            // Sahifalarni o'zgartirish
+            levelsPage.classList.remove('active');
+            registrationPage.classList.add('active');
+            
+            // Forma maydonlarini tozalash
+            document.getElementById('first-name').value = '';
+            document.getElementById('last-name').value = '';
+            document.getElementById('phone-number').value = '';
+            document.getElementById('first-name').focus();
+        }
+        
+        // Darajalar sahifasiga qaytish
+        function goBackToLevels() {
+            registrationPage.classList.remove('active');
+            levelsPage.classList.add('active');
+            currentLevel = null;
+        }
+        
+        // Testni boshlash
+        async function startTest() {
+            const firstName = document.getElementById('first-name').value.trim();
+            const lastName = document.getElementById('last-name').value.trim();
+            const phoneNumber = document.getElementById('phone-number').value.trim();
+            
+            if (!firstName || !lastName) {
+                alert('Iltimos, ism va familyangizni kiriting.');
+                return;
+            }
+            
+            if (!currentLevel) {
+                alert('Iltimos, avval daraja tanlang.');
+                return;
+            }
+            
+            registrationPage.classList.remove('active');
+            loadingPage.classList.add('active');
+            
+            try {
+                // Session yaratish
+                const response = await fetch('/api/start-session/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        level_id: currentLevel.id,
+                        first_name: firstName,
+                        last_name: lastName,
+                        phone_number: phoneNumber
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    currentSessionId = data.session_id;
+                    timeLimit = currentLevel.timeLimit;
+                    
+                    // Savollarni olish
+                    await loadQuestions();
+                } else {
+                    throw new Error(data.error || 'Noma\'lum xatolik');
+                }
+            } catch (error) {
+                console.error('Testni boshlashda xatolik:', error);
+                alert(`Xatolik: ${error.message}`);
+                goBackToLevels();
+                loadingPage.classList.remove('active');
+            }
+        }
+        
+        // Savollarni yuklash
+        async function loadQuestions() {
+            try {
+                const response = await fetch(`/api/questions/${currentSessionId}/`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    questions = data.questions;
+                    
+                    loadingPage.classList.remove('active');
+                    testPage.classList.add('active');
+                    
+                    // Test parametrlarini o'rnatish
+                    totalTime = timeLimit * 60;
+                    startTime = Date.now();
+                    startTimer();
+                    loadQuestion();
+                }
+            } catch (error) {
+                console.error('Savollarni yuklashda xatolik:', error);
+                alert('Savollarni yuklashda xatolik. Iltimos, qayta urinib ko\'ring.');
+                goBackToLevels();
+                loadingPage.classList.remove('active');
+            }
+        }
+        
+        // Timerni boshlash
+        function startTimer() {
+            updateTimerDisplay();
+            timerInterval = setInterval(() => {
+                if (totalTime > 0) {
+                    totalTime--;
+                    updateTimerDisplay();
+                } else {
+                    clearInterval(timerInterval);
+                    submitTest();
+                }
+            }, 1000);
+        }
+        
+        function updateTimerDisplay() {
+            const minutes = Math.floor(totalTime / 60);
+            const seconds = totalTime % 60;
+            document.getElementById('time').textContent = 
+                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        // Savolni yuklash
+        function loadQuestion() {
+            const question = questions[currentQuestionIndex];
+            if (!question) return;
+            
+            // Savol hisoblagichini yangilash
+            document.getElementById('question-counter').textContent = 
+                `Savol ${currentQuestionIndex + 1}/${questions.length}`;
+            
+            // Progress bari
+            const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+            document.getElementById('progress-fill').style.width = `${progress}%`;
+            
+            // Savol matni
+            document.getElementById('question-text').textContent = question.question_text;
+            
+            // Javoblarni yuklash
+            const answersContainer = document.getElementById('answers-container');
+            answersContainer.innerHTML = '';
+            
+            const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+            question.answers.forEach((answer, index) => {
+                const isSelected = userAnswers[question.id] === answer.id;
+                const answerDiv = document.createElement('div');
+                answerDiv.className = `answer-option ${isSelected ? 'selected' : ''}`;
+                answerDiv.onclick = () => selectAnswer(question.id, answer.id);
+                answerDiv.innerHTML = `
+                    <div class="answer-letter">${letters[index]}</div>
+                    <div class="answer-text">${answer.answer_text}</div>
+                `;
+                answersContainer.appendChild(answerDiv);
+            });
+            
+            // Navigation tugmalarini yangilash
+            document.getElementById('prev-btn').style.display = currentQuestionIndex === 0 ? 'none' : 'flex';
+            document.getElementById('next-btn').style.display = currentQuestionIndex === questions.length - 1 ? 'none' : 'flex';
+            document.getElementById('submit-btn').style.display = currentQuestionIndex === questions.length - 1 ? 'flex' : 'none';
+        }
+        
+        // Javobni tanlash
+        function selectAnswer(questionId, answerId) {
+            userAnswers[questionId] = answerId;
+            loadQuestion();
+        }
+        
+        // Oldingi savol
+        function prevQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                loadQuestion();
+            }
+        }
+        
+        // Keyingi savol
+        function nextQuestion() {
+            if (currentQuestionIndex < questions.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            }
+        }
+        
+        // Testni tugatish
+        async function submitTest() {
+            clearInterval(timerInterval);
+            
+            // Sarflangan vaqtni hisoblash
+            const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+            
+            loadingPage.classList.add('active');
+            testPage.classList.remove('active');
+            
+            try {
+                const answers = Object.entries(userAnswers).map(([questionId, answerId]) => ({
+                    question_id: parseInt(questionId),
+                    answer_id: parseInt(answerId)
+                }));
+                
+                const response = await fetch('/api/submit-test/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        session_id: currentSessionId,
+                        answers: answers,
+                        time_taken: timeSpent
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    loadingPage.classList.remove('active');
+                    resultPage.classList.add('active');
+                    
+                    // Natijalarni ko'rsatish
+                    const minutes = Math.floor(timeSpent / 60);
+                    const seconds = timeSpent % 60;
+                    
+                    document.getElementById('score-text').textContent = `${data.score}%`;
+                    document.getElementById('correct-answers').textContent = `${data.correct}/${data.total}`;
+                    document.getElementById('result-level').textContent = currentLevel.name;
+                    document.getElementById('time-spent').textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                    
+                    // Telegram statusi
+                    if (data.telegram_sent) {
+                        document.getElementById('telegram-notice').classList.add('active');
+                        document.getElementById('telegram-error').classList.remove('active');
+                    } else {
+                        document.getElementById('telegram-notice').classList.remove('active');
+                        document.getElementById('telegram-error').classList.remove('active');
+                    }
+                    
+                    // Natija ikonkasi
+                    const resultIcon = document.getElementById('result-icon');
+                    if (data.score >= 80) {
+                        resultIcon.innerHTML = '<i class="fas fa-trophy" style="color: #f59e0b;"></i>';
+                        document.getElementById('result-message').textContent = 'Ajoyib natija! Siz bu darajani mukammal egallagansiz!';
+                    } else if (data.score >= 60) {
+                        resultIcon.innerHTML = '<i class="fas fa-star" style="color: #3b82f6;"></i>';
+                        document.getElementById('result-message').textContent = 'Yaxshi natija! Biroz mashq qilsangiz yaxshiroq natijaga erishasiz.';
+                    } else {
+                        resultIcon.innerHTML = '<i class="fas fa-redo" style="color: #ef4444;"></i>';
+                        document.getElementById('result-message').textContent = 'Qayta urinib ko\'ring. Ko\'proq mashq qilishingiz kerak.';
+                    }
+                    
+                    // Progress circle animatsiyasi
+                    const circle = document.querySelector('.score-circle-fill');
+                    const circumference = 565;
+                    const offset = circumference - (data.score / 100) * circumference;
+                    setTimeout(() => {
+                        circle.style.strokeDashoffset = offset;
+                    }, 100);
+                }
+            } catch (error) {
+                console.error('Testni yuborishda xatolik:', error);
+                alert('Natijalarni yuborishda xatolik. Iltimos, qayta urinib ko\'ring.');
+                goBackToLevels();
+                loadingPage.classList.remove('active');
+            }
+        }
+        
+        // Testdan chiqish
+        function exitTest() {
+            if (confirm('Testni yakunlamoqchimisiz? Barcha javoblaringiz saqlanmaydi.')) {
+                clearInterval(timerInterval);
+                testPage.classList.remove('active');
+                goBackToLevels();
+            }
+        }
+        
+        // Yangi test boshlash
+        function restartTest() {
+            resultPage.classList.remove('active');
+            levelsPage.classList.add('active');
+            
+            // O'zgaruvchilarni tozalash
+            currentLevel = null;
+            currentSessionId = null;
+            questions = [];
+            currentQuestionIndex = 0;
+            userAnswers = {};
+            timeLimit = 15;
+            totalTime = 0;
+        }
+        
+        // Javoblarni ko'rish
+        function viewAnswers() {
+            alert('Javoblar sahifasi tez orada qo\'shiladi!');
+        }
+        
+        // Natijalarni ulashish
+        function shareResults() {
+            const score = document.getElementById('score-text').textContent;
+            const level = document.getElementById('result-level').textContent;
+            const text = `Men IT House ingliz tili testida ${score} ball to'pladim! (${level} darajasi)`;
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Mening test natijam',
+                    text: text,
+                    url: window.location.href
+                });
+            } else {
+                navigator.clipboard.writeText(text);
+                alert('Natijalar buferga nusxalandi!');
+            }
+        }
+    </script>
+</body>
+</html>
