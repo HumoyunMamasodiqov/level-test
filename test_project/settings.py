@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-@j_9y8z$#a%l^3*6m$0!w5x&7v1p2r4t6y8u9i0o1k3n5m7q9s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0.0.0.0']
+ALLOWED_HOSTS = [
+    'ithousedaraja.uz',
+    'www.ithousedaraja.uz',
+    '.onrender.com'
+]
 
 # settings.py ga qo'shish
 import os
