@@ -1,1 +1,2 @@
-basicsr==1.5.3
+
+basicsr==1.4.2
