@@ -10,9 +10,6 @@ urlpatterns = [
     path('instructions/', views.instructions, name='instructions'),
     path('statistics/', views.statistics, name='statistics'),
     path('results/', views.all_results, name='all_results'),
-    path('results/<str:session_id>/', views.result_detail, name='result_detail'),
-    
-    # API endpointlar
     path('api/levels/', views.get_levels, name='get_levels'),
     path('api/start-session/', views.start_test_session, name='start_test_session'),
     path('api/questions/<str:session_id>/', views.get_questions, name='get_questions'),
