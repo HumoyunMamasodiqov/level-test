@@ -142,7 +142,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # TELEGRAM BOT (optional)
 # ========================
 TELEGRAM_BOT_TOKEN = os.environ.get("8489045280:AAHgPKMNfeZUNXa4w4Wqo7n1l4A-2kVaStQ", "")
-ADMIN_TELEGRAM_ID = os.environ.get("8352638044", "")
+ADMIN_TELEGRAM_ID = os.environ.get("8352638044", "5629187258")
 
 # ========================
 # SECURITY (PRODUCTION)
